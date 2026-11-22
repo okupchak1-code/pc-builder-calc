@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CYBERFORGE PC — Кастомна збірка та апгрейд ПК</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">CYBER<span>FORGE</span></a>
+      <nav class="nav">
+        <a href="#calculator">Калькулятор</a>
+        <a href="#features">Переваги</a>
+      </nav>
+      <a href="#calculator" class="btn btn-outline">Розрахувати</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="badge">CUSTOM PC STUDIO // LVL MAX</div>
+        <h1>Збираємо машини, які <span>випереджають</span> час</h1>
+        <p class="hero-sub">
+          Індивідуальна збірка, кастомний кабель-менеджмент, андервольтинг та стрес-тестування без компромісів.
+        </p>
+        <a href="#calculator" class="btn btn-primary">Зібрати конфігурацію</a>
+      </div>
+    </section>
+
+    <section id="calculator" class="calculator-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Інтерактивний <span>конфігуратор</span> послуг</h2>
+          <p>Обери базовий пакет та додаткові модулі — система миттєво розрахує вартість і час роботи</p>
+        </div>
+
+        <div class="calc-grid">
+          <!-- Ліва колонка: вибір пакетів та опцій -->
+          <div class="calc-controls">
+            <div class="control-block">
+              <h3><span class="step-num">01</span> Базовий пакет</h3>
+              <div class="packages-grid">
+                <label class="package-card active">
+                  <input type="radio" name="package" value="basic" data-price="1200" data-hours="3" data-title="Базова збірка ПК" checked />
+                  <div class="card-top">
+                    <span class="pkg-name">Базова збірка</span>
+                    <span class="pkg-price">1 200 ₴</span>
+                  </div>
+                  <p class="pkg-desc">Акуратна збірка з комплектуючих, базове укладання кабелів, перший запуск та перевірка BIOS.</p>
+                  <div class="pkg-meta">~ 3 год роботи</div>
+                </label>
+
+                <label class="package-card">
+                  <input type="radio" name="package" value="pro" data-price="2400" data-hours="6" data-title="Кастомна збірка + розгін" />
+                  <div class="card-top">
+                    <span class="pkg-name">Кастом + розгін</span>
+                    <span class="pkg-price">2 400 ₴</span>
+                  </div>
+                  <p class="pkg-desc">Преміум-збірка, налаштування XMP/EXPO профілів пам'яті, оптимізація таймінгів та RGB-синхронізація.</p>
+                  <div class="pkg-meta">~ 6 год роботи</div>
+                </label>
+
+                <label class="package-card">
+                  <input type="radio" name="package" value="service" data-price="900" data-hours="2.5" data-title="Глибоке ТО та чистка" />
+                  <div class="card-top">
+                    <span class="pkg-name">Глибоке ТО та чистка</span>
+                    <span class="pkg-price">900 ₴</span>
+                  </div>
+                  <p class="pkg-desc">Повна розборка, очищення від пилу, заміна термопасти та термопрокладок на преміальні матеріали.</p>
+                  <div class="pkg-meta">~ 2.5 год роботи</div>
+                </label>
+              </div>
+            </div>
+
+            <div class="control-block">
+              <h3><span class="step-num">02</span> Додаткові модулі</h3>
+              <div class="addons-list">
+                <label class="addon-item">
+                  <input type="checkbox" class="addon-checkbox" data-price="500" data-hours="1.5" data-title="Кастомний кабель-менеджмент" />
+                  <span class="custom-check"></span>
+                  <div class="addon-info">
+                    <span class="addon-title">Кастомний кабель-менеджмент</span>
+                    <span class="addon-sub">Ідеальна укладка за задньою стінкою стяжками та гребінцями</span>
+                  </div>
+                  <span class="addon-price">+ 500 ₴</span>
+                </label>
+
+                <label class="addon-item">
+                  <input type="checkbox" class="addon-checkbox" data-price="650" data-hours="2" data-title="Андервольтинг та криві вентиляторів" />
+                  <span class="custom-check"></span>
+                  <div class="addon-info">
+                    <span class="addon-title">Андервольтинг CPU/GPU + криві кулерів</span>
+                    <span class="addon-sub">Зниження температур на 8–12°C та мінімальний шум під навантаженням</span>
+                  </div>
+                  <span class="addon-price">+ 650 ₴</span>
+                </label>
+
+                <label class="addon-item">
+                  <input type="checkbox" class="addon-checkbox" data-price="400" data-hours="1" data-title="Встановлення ОС та драйверів" />
+                  <span class="custom-check"></span>
+                  <div class="addon-info">
+                    <span class="addon-title">Встановлення Windows + пакет драйверів</span>
+                    <span class="addon-sub">Чиста система без сміття, актуальні драйвери чипсета та відеокарти</span>
+                  </div>
+                  <span class="addon-price">+ 400 ₴</span>
+                </label>
+
+                <label class="addon-item">
+                  <input type="checkbox" class="addon-checkbox" data-price="450" data-hours="4" data-title="Стрес-тест 4 години (OCCT / FurMark)" />
+                  <span class="custom-check"></span>
+                  <div class="addon-info">
+                    <span class="addon-title">Стрес-тест стабільності (4 години)</span>
+                    <span class="addon-sub">Перевірка під 100% навантаженням у OCCT, AIDA64 та FurMark зі звітом</span>
+                  </div>
+                  <span class="addon-price">+ 450 ₴</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Права колонка: підсумок -->
+          <aside class="calc-summary">
+            <div class="summary-card">
+              <div class="summary-header">
+                <span>ЗВЕДЕННЯ КОНФІГУРАЦІЇ</span>
+                <span class="status-dot">ONLINE</span>
+              </div>
+
+              <ul id="selected-list" class="selected-list">
+                <li><span>Базова збірка ПК</span><span>1 200 ₴</span></li>
+              </ul>
+
+              <div class="summary-divider"></div>
+
+              <div class="summary-stats">
+                <div class="stat-row">
+                  <span>Орієнтовний час:</span>
+                  <strong id="total-time">3 год</strong>
+                </div>
+                <div class="stat-row total-row">
+                  <span>Разом до сплати:</span>
+                  <strong id="total-price" class="price-highlight">1 200 ₴</strong>
+                </div>
+              </div>
+
+              <button id="open-modal-btn" class="btn btn-primary btn-full">Замовити конфігурацію</button>
+              <p class="summary-note">Оплата після перевірки та демонстрації роботи ПК</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features-section">
+      <div class="container features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h4>Точні температури</h4>
+          <p>Використовуємо лише перевірені термоінтерфейси та тестуємо кожен вузол під навантаженням.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🛠️</div>
+          <h4>Фото- та відеозвіт</h4>
+          <p>Надсилаємо процес збірки та скріншоти тестів стабільності прямо в Telegram.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🛡️</div>
+          <h4>Гарантія на роботу</h4>
+          <p>Безкоштовна підтримка та консультації щодо апгрейду протягом 6 місяців після збірки.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Модальне вікно -->
+  <div id="order-modal" class="modal-backdrop" aria-hidden="true">
+    <div class="modal-window">
+      <button id="close-modal-btn" class="modal-close" aria-label="Закрити">&times;</button>
+
+      <!-- Форма заявки -->
+      <div id="modal-form-view">
+        <h3>Оформлення <span>заявки</span></h3>
+        <p class="modal-sub">Перевір обрані модулі та залиш контакт для зв'язку</p>
+
+        <div class="modal-summary-box">
+          <div id="modal-items"></div>
+          <div class="modal-total">
+            <span>Сума: <strong id="modal-price">1 200 ₴</strong></span>
+            <span>Час: <strong id="modal-time">3 год</strong></span>
+          </div>
+        </div>
+
+        <form id="order-form" novalidate>
+          <div class="form-group">
+            <label for="client-name">Твоє ім'я *</label>
+            <input type="text" id="client-name" placeholder="Наприклад: Олександр" />
+            <span class="error-msg">Вкажи своє ім'я</span>
+          </div>
+
+          <div class="form-group">
+            <label for="client-tg">Нік у Telegram або телефон *</label>
+            <input type="text" id="client-tg" placeholder="@username або +380..." />
+            <span class="error-msg">Вкажи контакт для зв'язку</span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">Підтвердити замовлення</button>
+        </form>
+      </div>
+
+      <!-- Екран успіху -->
+      <div id="modal-success-view" class="success-view hidden">
+        <div class="success-icon">✓</div>
+        <h3>Заявку прийнято!</h3>
+        <p>Майстер зв'яжеться з тобою в Telegram протягом 15 хвилин для узгодження деталей.</p>
+        <button id="done-modal-btn" class="btn btn-outline btn-full">Повернутися на сайт</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
